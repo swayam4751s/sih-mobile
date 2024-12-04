@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
+<link rel="manifest" href="https://swayam4751s.github.io/sih-mobile/superpwa-manifest.json">
+<link rel="prefetch" href="https://swayam4751s.github.io/sih-mobile/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+<!-- / SuperPWA.com -->
+<title>vocational traning</title>
+<script type="text/html" id="tmpl-bb-link-preview">
+<% if ( link_scrapping ) { %>
+	<% if ( link_loading ) { %>
+		<span class="bb-url-scrapper-loading bb-ajax-loader"><i class="bb-icon-l bb-icon-spinner animate-spin"></i>Loading preview...</span>
+	<% } %>
+	<% if ( link_success || link_error ) { %>
+		<a title="Cancel Preview" href="#" id="bb-close-link-suggestion">Remove Preview</a>
+		<div class="bb-link-preview-container">
+
+			<% if ( link_images && link_images.length && link_success && ! link_error && '' !== link_image_index ) { %>
+				<div id="bb-url-scrapper-img-holder">
+					<div class="bb-link-preview-image">
+						<div class="bb-link-preview-image-cover">
+							<img src="<%= link_images[link_image_index] %>"/>
+						</div>
+						<div class="bb-link-preview-icons">
+							<%
+							if ( link_images.length > 1 ) { %>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Change image" href="#" class="icon-exchange toolbar-button bp-tooltip" id="icon-exchange"><i class="bb-icon-l bb-icon-exchange"></i></a>
+							<% } %>
+							<% if ( link_images.length ) { %>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Remove image" href="#" class="icon-image-slash toolbar-button bp-tooltip" id="bb-link-preview-remove-image"><i class="bb-icon-l bb-icon-image-slash"></i></a>
+							<% } %>
+							<a data-bp-tooltip-pos="up" data-bp-tooltip="Confirm" class="toolbar-button bp-tooltip" href="#" id="bb-link-preview-select-image">
+								<i class="bb-icon-check bb-icon-l"></i>
+							</a>
+						</div>
+					</div>
+					<% if ( link_images.length > 1 ) { %>
+						<div class="bb-url-thumb-nav">
+							<button type="button" id="bb-url-prevPicButton"><span class="bb-icon-l bb-icon-angle-left"></span></button>
+							<button type="button" id="bb-url-nextPicButton"><span class="bb-icon-l bb-icon-angle-right"></span></button>
+							<div id="bb-url-scrapper-img-count">
+								Image <%= link_image_index + 1 %>&nbsp;of&nbsp;<%= link_images.length %>
+							</div>
+						</div>
+					<% } %>
+				</div>
+			<% } %>
+
+			<% if ( link_success && ! link_error && link_url ) { %>
+				<div class="bb-link-preview-info">
+					<% var a = document.createElement('a');
+						a.href = link_url;
+						var hostname = a.hostname;
+						var domainName = hostname.replace('www.', '' );
+					%>
+
+					<% if ( 'undefined' !== typeof link_title && link_title.trim() && link_description ) { %>
+						<p class="bb-link-preview-link-name"><%= domainName %></p>
+					<% } %>
+
+					<% if ( link_success && ! link_error ) { %>
+						<p class="bb-link-preview-title"><%= link_title %></p>
+					<% } %>
+
+					<% if ( link_success && ! link_error ) { %>
+						<div class="bb-link-preview-excerpt"><p><%= link_description %></p></div>
+					<% } %>
+				</div>
+			<% } %>
+			<% if ( link_error && ! link_success ) { %>
+				<div id="bb-url-error" class="bb-url-error"><%= link_error_msg %></div>
+			<% } %>
+		</div>
+	<% } %>
+<% } %>
+</script>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="vocational traning &raquo; Feed" href="https://swayam4751s.github.io/sih-mobile/feed/">
+<link rel="alternate" type="application/rss+xml" title="vocational traning &raquo; Comments Feed" href="https://swayam4751s.github.io/sih-mobile/comments/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="dashicons-css" href="https://swayam4751s.github.io/sih-mobile/wp-includes/css/dashicons.min.css?ver=6.7.1" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="https://swayam4751s.github.io/sih-mobile/wp-includes/css/admin-bar.min.css?ver=6.7.1" type="text/css" media="all">
+<style id="admin-bar-inline-css" type="text/css">@media screen { html { margin-top: 32px !important; } }
+		@media screen and ( max-width: 782px ) { html { margin-top: 46px !important; } }
+	
+@media print { #wpadminbar { display:none; } }</style>
+<link rel="stylesheet" id="bp-nouveau-icons-map-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/icons/css/icons-map.min.css?ver=2.6.70" type="text/css" media="screen">
+<link rel="stylesheet" id="bp-nouveau-bb-icons-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/icons/css/bb-icons.min.css?ver=1.0.5" type="text/css" media="screen">
+<link rel="stylesheet" id="bp-nouveau-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/css/buddypress.min.css?ver=2.6.70" type="text/css" media="screen">
+<style id="bp-nouveau-inline-css" type="text/css">.list-wrap .bs-group-cover a:before{ background:unset; }</style>
+<link rel="stylesheet" id="buddyboss_legacy-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/inc/plugins/buddyboss-menu-icons/vendor/kucrut/icon-picker/css/types/buddyboss_legacy.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://swayam4751s.github.io/sih-mobile/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1" type="text/css" media="all">
+<link rel="stylesheet" id="bb_theme_block-buddypanel-style-css-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/blocks/buddypanel/build/style-buddypanel.css?ver=a43481f57c3cc73f6cce06223a569c14" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="bp-admin-bar-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/css/admin-bar.min.css?ver=2.6.70" type="text/css" media="all">
+<link rel="stylesheet" id="bb-pro-enqueue-scripts-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/assets/css/index.min.css?ver=2.5.80" type="text/css" media="all">
+<link rel="stylesheet" id="bb-access-control-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/access-control/assets/css/bb-access-control.min.css?ver=2.5.80" type="text/css" media="all">
+<link rel="stylesheet" id="bb-schedule-posts-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/schedule-posts/assets/css/bb-schedule-posts.min.css?ver=2.5.80" type="text/css" media="all">
+<link rel="stylesheet" id="bb-tutorlms-admin-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/integrations/tutorlms/assets/css/bb-tutorlms-admin.min.css?ver=2.6.70" type="text/css" media="all">
+<link rel="stylesheet" id="redux-extendify-styles-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/inc/admin/framework/redux-core/assets/css/extendify-utilities.css?ver=4.4.11" type="text/css" media="all">
+<link rel="stylesheet" id="buddyboss-theme-fonts-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/fonts/fonts.css?ver=2.6.60" type="text/css" media="all">
+<link rel="stylesheet" id="bp-zoom-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/css/bp-zoom.min.css?ver=2.5.80" type="text/css" media="all">
+<link rel="stylesheet" id="buddyboss-theme-magnific-popup-css-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/css/vendors/magnific-popup.min.css?ver=2.6.60" type="text/css" media="all">
+<link rel="stylesheet" id="buddyboss-theme-select2-css-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/css/vendors/select2.min.css?ver=2.6.60" type="text/css" media="all">
+<link rel="stylesheet" id="buddyboss-theme-css-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/css/theme.min.css?ver=2.6.60" type="text/css" media="all">
+<link rel="stylesheet" id="buddyboss-theme-template-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/css/template-v2.min.css?ver=2.6.60" type="text/css" media="all">
+<link rel="stylesheet" id="buddyboss-theme-buddypress-css" href="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/css/buddypress.min.css?ver=2.6.60" type="text/css" media="all">
+<script type="text/javascript" id="bb-twemoji-js-extra">
+/* <![CDATA[ */
+var bbemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/twemoji.min.js?ver=2.6.70" id="bb-twemoji-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/bb-emoji-loader.min.js?ver=2.6.70" id="bb-emoji-loader-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="bb-reaction-js-extra">
+/* <![CDATA[ */
+var bbReactionVars = {"ajax_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/reactions/assets/js/bb-reaction.min.js?ver=2.5.80" id="bb-reaction-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/widget-members.min.js?ver=2.6.70" id="bp-widget-members-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/jquery-query.min.js?ver=2.6.70" id="bp-jquery-query-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/jquery-cookie.min.js?ver=2.6.70" id="bp-jquery-cookie-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/jquery-scroll-to.min.js?ver=2.6.70" id="bp-jquery-scroll-to-js"></script>
+<script type="text/javascript" id="bb-tutorlms-admin-js-extra">
+/* <![CDATA[ */
+var bbTutorLMSVars = {"ajax_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-admin\/admin-ajax.php","select_course_placeholder":"Start typing a course name to associate with this group."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/integrations/tutorlms/assets/js/bb-tutorlms-admin.min.js?ver=2.6.70" id="bb-tutorlms-admin-js"></script>
+<link rel="https://api.w.org/" href="https://swayam4751s.github.io/sih-mobile/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://swayam4751s.github.io/sih-mobile/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.1">
+
+	<script>var ajaxurl = 'https://swayam4751s.github.io/sih-mobile/wp-admin/admin-ajax.php';</script>
+
+	<meta name="generator" content="Redux 4.4.11">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+<style id="buddyboss_theme-style">:root{--bb-primary-color:#385DFF;--bb-primary-color-rgb:56, 93, 255;--bb-body-background-color:#FAFBFD;--bb-body-background-color-rgb:250, 251, 253;--bb-content-background-color:#FFFFFF;--bb-content-alternate-background-color:#F2F4F5;--bb-content-border-color:#D6D9DD;--bb-content-border-color-rgb:214, 217, 221;--bb-cover-image-background-color:#647385;--bb-headings-color:#1E2132;--bb-headings-color-rgb:30, 33, 50;--bb-body-text-color:#5A5A5A;--bb-body-text-color-rgb:90, 90, 90;--bb-alternate-text-color:#9B9C9F;--bb-alternate-text-color-rgb:155, 156, 159;--bb-primary-button-background-regular:#385DFF;--bb-primary-button-background-hover:#1E42DD;--bb-primary-button-border-regular:#385DFF;--bb-primary-button-border-hover:#1E42DD;--bb-primary-button-text-regular:#ffffff;--bb-primary-button-text-regular-rgb:255, 255, 255;--bb-primary-button-text-hover:#ffffff;--bb-primary-button-text-hover-rgb:255, 255, 255;--bb-secondary-button-background-regular:#F2F4F5;--bb-secondary-button-background-hover:#385DFF;--bb-secondary-button-border-regular:#F2F4F5;--bb-secondary-button-border-hover:#385DFF;--bb-secondary-button-text-regular:#1E2132;--bb-secondary-button-text-hover:#FFFFFF;--bb-header-background:#ffffff;--bb-header-alternate-background:#F2F4F5;--bb-header-links:#1E2132;--bb-header-links-hover:#385DFF;--bb-header-mobile-logo-size:px;--bb-header-height:76px;--bb-sidenav-background:#ffffff;--bb-sidenav-text-regular:#1E2132;--bb-sidenav-text-hover:#1E2132;--bb-sidenav-text-active:#ffffff;--bb-sidenav-menu-background-color-regular:#FFFFFF;--bb-sidenav-menu-background-color-hover:#F2F4F5;--bb-sidenav-menu-background-color-active:#385DFF;--bb-sidenav-count-text-color-regular:#1E2132;--bb-sidenav-count-text-color-hover:#FFFFFF;--bb-sidenav-count-text-color-active:#385DFF;--bb-sidenav-count-background-color-regular:#F2F4F5;--bb-sidenav-count-background-color-hover:#385DFF;--bb-sidenav-count-background-color-active:#FFFFFF;--bb-footer-background:#FAFBFD;--bb-footer-widget-background:#FAFBFD;--bb-footer-text-color:#5A5A5A;--bb-footer-menu-link-color-regular:#5A5A5A;--bb-footer-menu-link-color-hover:#385DFF;--bb-footer-menu-link-color-active:#1E2132;--bb-admin-screen-bgr-color:#FFFFFF;--bb-admin-screen-txt-color:#1E2132;--bb-login-register-link-color-regular:#5A5A5A;--bb-login-register-link-color-hover:#1E42DD;--bb-login-register-button-background-color-regular:#385DFF;--bb-login-register-button-background-color-hover:#1E42DD;--bb-login-register-button-border-color-regular:#385DFF;--bb-login-register-button-border-color-hover:#1E42DD;--bb-login-register-button-text-color-regular:#FFFFFF;--bb-login-register-button-text-color-hover:#FFFFFF;--bb-label-background-color:#D7DFFF;--bb-label-text-color:#385DFF;--bb-tooltip-background:#1E2132;--bb-tooltip-background-rgb:30, 33, 50;--bb-tooltip-color:#ffffff;--bb-default-notice-color:#385DFF;--bb-default-notice-color-rgb:56, 93, 255;--bb-success-color:#14B550;--bb-success-color-rgb:20, 181, 80;--bb-warning-color:#ED9615;--bb-warning-color-rgb:237, 150, 21;--bb-danger-color:#DB222A;--bb-danger-color-rgb:219, 34, 42;--bb-login-custom-heading-color:#FFFFFF;--bb-button-radius:7px;--bb-block-radius:10px;--bb-option-radius:5px;--bb-block-radius-inner:6px;--bb-input-radius:6px;--bb-label-type-radius:6px;--bb-checkbox-radius:5.4px;--bb-primary-button-focus-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.08);--bb-secondary-button-focus-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.08);--bb-outline-button-focus-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.08);--bb-input-focus-shadow:0px 0px 0px 2px rgba(var(--bb-primary-color-rgb), 0.1);--bb-input-focus-border-color:var(--bb-primary-color);--bb-widget-title-text-transform:none;}.bb-style-primary-bgr-color {background-color:#385DFF;}.bb-style-border-radius {border-radius:7px;}.site-header-container #site-logo .bb-logo img,.site-header-container #site-logo .site-title img.bb-logo,.site-title img.bb-mobile-logo {max-height:76px}.sticky-header .site-content,body.buddypress.sticky-header .site-content,.bb-buddypanel.sticky-header .site-content,.single-sfwd-quiz.bb-buddypanel.sticky-header .site-content,.single-sfwd-lessons.bb-buddypanel.sticky-header .site-content,.single-sfwd-topic.bb-buddypanel.sticky-header .site-content {padding-top:76px}.site-header .site-header-container,.header-search-wrap,.header-search-wrap input.search-field,.header-search-wrap form.search-form {height:76px;}.sticky-header .bp-feedback.bp-sitewide-notice {top:76px;}@media screen and (max-width:767px) {.bb-mobile-header {height:76px;}#learndash-content .lms-topic-sidebar-wrapper .lms-topic-sidebar-data {height:calc(90vh - 76px);}}[data-balloon]:after,[data-bp-tooltip]:after {background-color:rgba( 30,33,50,1 );box-shadow:none;}[data-balloon]:before,[data-bp-tooltip]:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 30,33,50,1)%22%20transform%3D%22rotate(0)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="right"]:before,[data-balloon][data-balloon-pos='right']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 30,33,50,1)%22%20transform%3D%22rotate(90 6 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="left"]:before,[data-balloon][data-balloon-pos='left']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 30,33,50,1)%22%20transform%3D%22rotate(-90 18 18)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="down-left"]:before,[data-bp-tooltip][data-bp-tooltip-pos="down"]:before,[data-balloon][data-balloon-pos='down']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 30,33,50,1)%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}</style>
+            <style id="buddyboss_theme-bp-style">#buddypress #header-cover-image.has-default,#buddypress #header-cover-image.has-default .guillotine-window img,.bs-group-cover.has-default a {background-color:#647385;}body.buddypress.register.login-split-page .login-split .split-overlay,body.buddypress.activation.login-split-page .login-split .split-overlay {opacity:0.3;}</style>
+            
+		<style id="buddyboss_theme-custom-style">a.bb-close-panel i {top:67px;}</style>
+		
+	</head>
+
+	<body class="home-page bp-nouveau home blog admin-bar no-customize-support buddyboss-theme bb-template-v2 buddypanel-logo-off bb-custom-typo has-sidebar blog-sidebar sidebar-right  header-style-1  menu-style-standard sticky-header no-js">
+
+        		<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul role="menu" id="wp-admin-bar-root-default" class="ab-top-menu">
+<li role="group" id="wp-admin-bar-wp-logo" class="menupop">
+<div class="ab-item ab-empty-item" tabindex="0" role="menuitem" aria-expanded="false">
+<span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span>
+</div>
+<div class="ab-sub-wrapper"><ul role="menu" id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+<li role="group" id="wp-admin-bar-wporg"><a class="ab-item" role="menuitem" href="https://wordpress.org/">WordPress.org</a></li>
+<li role="group" id="wp-admin-bar-documentation"><a class="ab-item" role="menuitem" href="https://wordpress.org/documentation/">Documentation</a></li>
+<li role="group" id="wp-admin-bar-learn"><a class="ab-item" role="menuitem" href="https://learn.wordpress.org/">Learn WordPress</a></li>
+<li role="group" id="wp-admin-bar-support-forums"><a class="ab-item" role="menuitem" href="https://wordpress.org/support/forums/">Support</a></li>
+<li role="group" id="wp-admin-bar-feedback"><a class="ab-item" role="menuitem" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
+</ul></div>
+</li>
+<li role="group" id="wp-admin-bar-bp-login"><a class="ab-item" role="menuitem" href="https://swayam4751s.github.io/sih-mobile/wp-login.php?redirect_to=https%3A%2F%2Fswayam4751s.github.io%2Fsih-mobile%2F%3Fsimply_static_page%3D1">Log In</a></li>
+</ul>
+<ul role="menu" id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li role="group" id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1" role="menuitem"><form action="https://swayam4751s.github.io/sih-mobile/" method="get" id="adminbarsearch">
+<input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search">
+</form></div></li></ul>			</div>
+		</div>
+
+		
+		
+		<div id="page" class="site">
+
+			
+			<header id="masthead" class="site-header site-header--bb">
+				<div class="container site-header-container flex default-header">
+    <a href="#" class="bb-toggle-panel"><i class="bb-icon-l bb-icon-sidebar"></i></a>
+    
+<div id="site-logo" class="site-branding buddypanel_logo_display_off">
+	<h1 class="site-title">
+		<a href="https://swayam4751s.github.io/sih-mobile/" rel="home">
+			vocational traning		</a>
+	</h1>
+</div>	<nav id="site-navigation" class="main-navigation" data-menu-space="120">
+		<div id="primary-navbar">
+						<div id="navbar-collapse">
+				<a class="more-button" href="#"><i class="bb-icon-f bb-icon-ellipsis-h"></i></a>
+				<div class="sub-menu">
+					<div class="wrapper">
+						<ul id="navbar-extend" class="sub-menu-inner"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+		
+<div id="header-aside" class="header-aside name_and_avatar">
+	<div class="header-aside-inner">
+
+		
+							<a href="#" class="header-search-link" data-balloon-pos="down" data-balloon="Search" aria-label="Search"><i class="bb-icon-l bb-icon-search"></i></a>
+				<span class="search-separator bb-separator"></span>
+								<div class="bb-header-buttons">
+					<a href="https://swayam4751s.github.io/sih-mobile/wp-login.php" class="button small outline signin-button link">Sign in</a>
+
+									</div>
+			
+	</div>
+<!-- .header-aside-inner -->
+</div>
+<!-- #header-aside -->
+</div>
+<div class="bb-mobile-header-wrapper bb-single-icon">
+	<div class="bb-mobile-header flex align-items-center">
+		<div class="bb-left-panel-icon-wrap">
+			<a href="#" class="push-left bb-left-panel-mobile"><i class="bb-icon-l bb-icon-bars"></i></a>
+		</div>
+
+		<div class="flex-1 mobile-logo-wrapper">
+			
+			<h1 class="site-title">
+
+				<a href="https://swayam4751s.github.io/sih-mobile/" rel="home">
+					vocational traning				</a>
+
+			</h1>
+		</div>
+		<div class="header-aside">
+								<a data-balloon-pos="left" data-balloon="Search" aria-label="Search" href="#" class="push-right header-search-link"><i class="bb-icon-l bb-icon-search"></i></a>
+							</div>
+	</div>
+
+	<div class="header-search-wrap">
+		<div class="container">
+			
+<form role="search" method="get" class="search-form" action="https://swayam4751s.github.io/sih-mobile/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field-top" placeholder="Search" value="" name="s">
+	</label>
+</form>
+			<a data-balloon-pos="left" data-balloon="Close" href="#" class="close-search"><i class="bb-icon-l bb-icon-times"></i></a>
+		</div>
+	</div>
+</div>
+
+<div class="bb-mobile-panel-wrapper left light closed">
+	<div class="bb-mobile-panel-inner">
+		<div class="bb-mobile-panel-header">
+							<div class="logo-wrap">
+					<a href="https://swayam4751s.github.io/sih-mobile/" rel="home">
+						vocational traning					</a>
+				</div>
+						<a href="#" class="bb-close-panel"><i class="bb-icon-l bb-icon-times"></i></a>
+		</div>
+
+		<nav class="main-navigation" data-menu-space="120">
+					</nav>
+
+	</div>
+</div>
+<div class="header-search-wrap">
+	<div class="container">
+		
+<form role="search" method="get" class="search-form" action="https://swayam4751s.github.io/sih-mobile/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field-top" placeholder="Search" value="" name="s">
+	</label>
+</form>
+		<a href="#" class="close-search"><i class="bb-icon-l bb-icon-times"></i></a>
+	</div>
+</div>			</header>
+
+			
+			
+			<div id="content" class="site-content">
+
+				
+				<div class="container">
+					<div class="bb-grid site-content-grid">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+
+		
+			
+			<div class="post-grid bb-standard">
+
+				
+				
+
+<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+
+			<div class="post-inner-wrap">
+	
+	
+	<div class="entry-content-wrap primary-entry-content">
+						<header class="entry-header">
+					<h2 class="entry-title"><a href="https://swayam4751s.github.io/sih-mobile/2024/12/04/hello-world/" rel="bookmark">Hello world!</a></h2>				</header><!-- .entry-header -->
+								<div class="entry-content">
+					<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+				</div>
+				<div class="entry-meta">
+	<div class="bb-user-avatar-wrap">
+		<div class="avatar-wrap">
+			<a href="https://swayam4751s.github.io/sih-mobile/members/admin/">
+				<img alt="" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/images/profile-avatar-buddyboss-50.png" srcset="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/images/profile-avatar-buddyboss-50.png 2x" class="avatar avatar-80 photo" height="80" width="80">			</a>
+		</div>
+		<div class="meta-wrap">
+			<a class="post-author" href="https://swayam4751s.github.io/sih-mobile/members/admin/">
+				admin			</a>
+			<span class="post-date"><a href="https://swayam4751s.github.io/sih-mobile/2024/12/04/hello-world/">December 4, 2024</a></span>
+		</div>
+	</div>
+	<div class="push-right flex align-items-center top-meta">
+			             
+
+		
+			
+							<a href="https://swayam4751s.github.io/sih-mobile/2024/12/04/hello-world/#comments" class="flex align-items-center bb-comments-wrap">
+					<i class="bb-icon-l bb-icon-comment-square"></i>
+					<span class="comments-count">1 <span class="bb-comment-text">Comment</span></span>
+				</a>
+			
+		
+        	</div>
+</div>
+
+			</div>
+
+			</div>
+<!--Close '.post-inner-wrap'-->
+	
+</article><!-- #post-1 -->
+
+
+
+			</div>
+
+			
+	</main><!-- #main -->
+</div>
+<!-- #primary -->
+
+
+
+	<div id="secondary" class="widget-area sm-grid-1-1">
+	
+		<aside id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="https://swayam4751s.github.io/sih-mobile/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
+<label class="wp-block-search__label" for="wp-block-search__input-1">Search</label><div class="wp-block-search__inside-wrapper ">
+<input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button>
+</div>
+</form></aside><aside id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h2 class="wp-block-heading">Recent Posts</h2>
+<ul class="wp-block-latest-posts__list wp-block-latest-posts">
+<li><a class="wp-block-latest-posts__post-title" href="https://swayam4751s.github.io/sih-mobile/2024/12/04/hello-world/">Hello world!</a></li>
+</ul>
+</div></div></aside><aside id="block-4" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h2 class="wp-block-heading">Recent Comments</h2>
+<ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://wordpress.org/">A WordPress Commenter</a> on <a class="wp-block-latest-comments__comment-link" href="https://swayam4751s.github.io/sih-mobile/2024/12/04/hello-world/#comment-1">Hello world!</a></footer></article></li></ol>
+</div></div></aside><aside id="block-5" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h2 class="wp-block-heading">Archives</h2>
+<ul class="wp-block-archives-list wp-block-archives">	<li><a href="https://swayam4751s.github.io/sih-mobile/2024/12/">December 2024</a></li>
+</ul>
+</div></div></aside><aside id="block-6" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h2 class="wp-block-heading">Categories</h2>
+<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-1">
+<a href="https://swayam4751s.github.io/sih-mobile/category/uncategorized/">Uncategorized</a>
+</li>
+</ul>
+</div></div></aside>	
+	</div>
+<!-- #secondary -->
+
+
+
+
+</div>
+<!-- .bb-grid -->
+</div>
+<!-- .container -->
+</div>
+<!-- #content -->
+
+
+
+
+	<footer class="footer-bottom bb-footer style-1">
+		<div class="container flex">
+			<div class="footer-bottom-left">				<div class="copyright">&copy; 2024 - vocational traning</div>
+				</div>
+<div class="footer-bottom-right push-right"></div>		</div>
+	</footer>
+
+</div>
+<!-- #page -->
+
+
+					<script type="text/javascript">jQuery(document).ready(function($){
+							const header_profile_ul = $('#header-aside > ul.sub-menu');
+							const toolbar_menu = $('#wp-admin-bar-my-account-buddypress > li.menupop').clone();
+
+							$(header_profile_ul).children('.menupop').remove();
+							$(header_profile_ul).children('li:first-child').append(toolbar_menu);
+						});</script>
+				<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/admin-bar.min.js?ver=6.7.1" id="admin-bar-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1" id="moment-js"></script>
+<script type="text/javascript" id="moment-js-after">
+/* <![CDATA[ */
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+moment.updateLocale( 'en_US', {"relativeTime":{"future":"in %s","past":"%s ago","s":"second","ss":"%d seconds","m":"a minute","mm":"%d minutes","h":"an hour","hh":"%d hours","d":"a day","dd":"%d days","w":"a week","ww":"%d weeks","M":"a month","MM":"%d months","y":"a year","yy":"%d years"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="bp-livestamp-js-extra">
+/* <![CDATA[ */
+var bb_livestamp = {"year_in_seconds":"31536000","day_in_seconds":"86400","week_in_seconds":"604800","hour_in_seconds":"3600","minute_in_seconds":"60","chunks":[31536000,5256000,2592000,604800,86400,3600,60,1],"unknown_text":"sometime","right_now_text":"a second","ago_text":"%s ago","second_text":"a second","seconds_text":"seconds","minute_text":"a minute","minutes_text":"minutes","hour_text":"an hour","hours_text":"hours","day_text":"a day","days_text":"days","week_text":"a week","weeks_text":"weeks","month_text":"a month","months_text":"months","year_text":"a year","years_text":"years"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/livestamp.min.js?ver=2.6.70" id="bp-livestamp-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/sih-mobile\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" id="bp-nouveau-js-extra">
+/* <![CDATA[ */
+var BP_Nouveau = {"ajaxurl":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-admin\/admin-ajax.php","only_admin_notice":"As you are the only organizer of this group, you cannot leave it. You can either delete the group or promote another member to be an organizer first and then leave the group.","is_friend_confirm":"Are you sure you want to remove your connection with this member?","confirm":"Are you sure?","confirm_delete_set":"Are you sure you want to delete this set? This cannot be undone.","show_x_comments":"View more comments","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","object_nav_parent":"#buddypress","anchorPlaceholderText":"Paste or type a link","empty_field":"New Field","close":"Close","parent_group_leave_confirm":"By leaving this main group you will automatically be removed and unsubscribed to any subgroups relating to this group.","group_leave_confirm":"<p>Are you sure you want to leave <span class=\"bb-group-name\"><\/span>?<\/p>","wpTime":"2024-12-04 09:42:20","wpTimezone":"","objects":{"0":"activity","1":"members","4":"xprofile","10":"settings","11":"notifications"},"nonces":{"activity":"df8e2b4481","members":"6238cb38d7","xprofile":"a8d0b750f4","settings":"de7f6b798a","notifications":"4c991bb040"},"is_send_ajax_request":"","activity":{"params":{"user_id":0,"object":"user","backcompat":false,"post_nonce":"c06ba23f04","post_draft_nonce":"586638e4e8","excluded_hosts":[],"user_can_post":false,"is_activity_edit":false,"displayed_user_id":0,"errors":{"empty_post_update":"Sorry, Your update cannot be empty.","post_fail":"An error occurred while saving your post.","media_fail":"To change the media type, remove existing media from your post."},"avatar_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform\/bp-core\/images\/profile-avatar-buddyboss-50.png","avatar_width":150,"avatar_height":150,"user_display_name":false,"user_domain":"","avatar_alt":"Profile photo of ","autoload":true,"objects":{"profile":{"text":"Post in: Profile","autocomplete_placeholder":"","priority":5}},"draft_activity":false,"access_control_settings":{"can_create_activity":true,"can_create_activity_media":true,"can_create_activity_document":true}},"strings":{"whatsnewPlaceholder":"Share what's on your mind, ...","whatsnewLabel":"Post what&#039;s new","whatsnewpostinLabel":"Post in","postUpdateButton":"Post","updatePostButton":"Update Post","cancelButton":"Cancel","commentLabel":"%d Comment","commentsLabel":"%d Comments","loadingMore":"Loading...","discardButton":"Discard Draft","pinPost":"Pin to Feed","unpinPost":"Unpin from Feed","pinGroupPost":"Pin to Group","unpinGroupPost":"Unpin from Group","pinPostError":"There was a problem marking this operation. Please try again.","reactionAjaxError":"There was a problem marking this operation. Please try again.","closeComments":"Turn off commenting","uncloseComments":"Turn on commenting","closeCommentsError":"There was a problem marking this operation. Please try again.","commentPostError":"There was a problem posting your comment.","muteNotification":"Turn off notifications","unmuteNotification":"Turn on notifications"}}};
+var BB_Nouveau_Presence = {"heartbeat_enabled":"1","presence_interval":"60","presence_default_interval":"60","presence_time_span":"20","idle_inactive_span":"180","rest_nonce":"aef05928b7","native_presence":"1","native_presence_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform\/bp-core\/bb-core-native-presence.php","presence_rest_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-json\/buddyboss\/v1\/members\/presence"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/js/buddypress-nouveau.min.js?ver=2.6.70" id="bp-nouveau-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/backbone.min.js?ver=1.6.0" id="backbone-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/wp-backbone.min.js?ver=6.7.1" id="wp-backbone-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/schedule-posts/assets/js/bb-schedule-posts.min.js?ver=2.5.80" id="bb-schedule-posts-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/js/jquery.guillotine.min.js?ver=2.6.70" id="guillotine-js-js"></script>
+<script type="text/javascript" id="heartbeat-js-extra">
+/* <![CDATA[ */
+var heartbeatSettings = {"ajaxurl":"\/sih-mobile\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/heartbeat.min.js?ver=6.7.1" id="heartbeat-js"></script>
+<script type="text/javascript" id="superpwa-register-sw-js-extra">
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/sih-mobile\/superpwa-sw.js?2.2.32","disable_addtohome":"0","enableOnDesktop":"","offline_form_addon_active":"","ajax_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-admin\/admin-ajax.php","offline_message":"1","offline_message_txt":"You are currently offline."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js?ver=2.2.32" id="superpwa-register-sw-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/magnific-popup.js?ver=2.6.70" id="bp-nouveau-magnific-popup-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/assets/js/vendor/jquery.mask.js?ver=5.0.4" id="bp-zoom-mask-js-js"></script>
+<script type="text/javascript" id="bp-zoom-js-js-extra">
+/* <![CDATA[ */
+var bp_zoom_vars = {"ajax_url":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-admin\/admin-ajax.php","home_url":"https:\/\/swayam4751s.github.io\/sih-mobile","is_single_meeting":"","is_single_webinar":"","group_id":"","group_meetings_url":"","group_meetings_past_url":"","group_webinars_url":"","group_webinar_past_url":"","meeting_delete_nonce":"47910448ad","meeting_confirm_msg":"Are you sure you want to delete this meeting?","webinar_delete_nonce":"52dddeb646","webinar_confirm_msg":"Are you sure you want to delete this webinar?","user":{"name":"Guest","email":"guest@domain.com"},"scripts":["https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/react.production.min.js","https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/react-dom.production.min.js","https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/redux.min.js","https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/redux-thunk.min.js","https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/lodash.min.js","https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/jquery.min.js"],"styles":["https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/bootstrap.css","https:\/\/swayam4751s.github.io\/sih-mobile\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/react-select.css"],"strings":{"day":"day","month":"month","week":"week"},"lang":"en-US","is_zoom_sdk":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/bp-zoom.min.js?ver=2.5.80" id="bp-zoom-js-js"></script>
+<script type="text/javascript" id="bb-countdown-js-js-extra">
+/* <![CDATA[ */
+var bb_countdown_vars = {"daysStr":"Days","hoursStr":"Hours","minutesStr":"Minutes","secondsStr":"Seconds"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/plugins/buddyboss-platform-pro/assets/js/bb-countdown.min.js?ver=1.0.1" id="bb-countdown-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/menu.js?ver=2.6.60" id="boss-menu-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/fitvids.js?ver=2.6.60" id="boss-fitvids-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/slick.min.js?ver=2.6.60" id="boss-slick-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/panelslider.min.js?ver=2.6.60" id="boss-panelslider-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/sticky-kit.js?ver=2.6.60" id="boss-sticky-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/jssocials.min.js?ver=2.6.60" id="boss-jssocials-js-js"></script>
+<script type="text/javascript" id="buddyboss-theme-main-js-js-extra">
+/* <![CDATA[ */
+var bs_data = {"jm_ajax":"https:\/\/swayam4751s.github.io\/sih-mobile\/jm-ajax\/","ajaxurl":"https:\/\/swayam4751s.github.io\/sih-mobile\/wp-admin\/admin-ajax.php","show_notifications":"1","show_messages":"1","facebook_label":"Share on Facebook","twitter_label":"Post","more_menu_title":"Menu Items","translation":{"comment_posted":"Your comment has been posted.","comment_btn_loading":"Please Wait...","choose_a_file_label":"Choose a file","email_validation":"Please enter a valid email address."},"gamipress_badge_label":"Badge","nonce_list_grid":"c8973a0c2e"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/main.min.js?ver=2.6.60" id="buddyboss-theme-main-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/validate.min.js?ver=2.6.60" id="boss-validate-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/select2.full.min.js?ver=2.6.60" id="select2-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/progressbar.min.js?ver=2.6.60" id="progressbar-js-js"></script>
+<script type="text/javascript" src="https://swayam4751s.github.io/sih-mobile/wp-content/themes/buddyboss-theme/assets/js/vendors/mousewheel.min.js?ver=2.6.60" id="mousewheel-js-js"></script>
+
+</body>
+</html>
